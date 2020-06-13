@@ -69,8 +69,7 @@ lotus sync wait
 启动miner。需要先完成领取测试币、注册矿工、节点同步完成。
 ```
 # 使用矿工注册结果来初始化miner
-# 建议如下所示加上--no-local-storage参数，不用默认位置LOTUS_STORAGE_PATH存数据
-lotus-storage-miner init --actor=xxx --owner=xxxxx --no-local-storage
+lotus-storage-miner init --actor=xxx --owner=xxxxx
 
 # 如果miner和worker不在一台机器，需要配置miner的IP
 # 取消ListenAddress和RemoteListenAddress前面的注释，并将它们的IP改成局域网IP

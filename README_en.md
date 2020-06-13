@@ -68,8 +68,7 @@ lotus sync wait
 Start miner. Need to complete the test coin getting, miner registering, and node synchronization before.
 ```
 # Use miner registration results to initialize miner
-# It is recommended to add the --no-local-storage parameter as shown below, instead of storing data in the default location LOTUS_STORAGE_PATH
-lotus-storage-miner init --actor=xxx --owner=xxxxx --no-local-storage
+lotus-storage-miner init --actor=xxx --owner=xxxxx
 
 # If miner and worker are not on the same machine, you need to configure the miner's IP
 # Cancel the comment in front of ListenAddress and RemoteListenAddress and change their IPs to LAN IPs
