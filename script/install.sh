@@ -12,12 +12,3 @@ apt install -y mesa-opencl-icd ocl-icd-opencl-dev ntpdate ubuntu-drivers-common
 # time adjust
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ntpdate ntp.aliyun.com
-
-# install ulimit
-ulimit -n 1048576
-sed -i "/nofile/d" /etc/security/limits.conf
-echo "* hard nofile 1048576" >> /etc/security/limits.conf
-echo "* soft nofile 1048576" >> /etc/security/limits.conf
-echo "root hard nofile 1048576" >> /etc/security/limits.conf
-echo "root soft nofile 1048576" >> /etc/security/limits.conf
-
