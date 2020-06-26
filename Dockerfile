@@ -4,7 +4,7 @@ RUN apt-get update -y &&\
     apt-get install curl git -y
 
 
-RUN git clone https://github.com/shannon-6block/lotus-miner.git  &&\
+RUN git clone https://github.com/cgwyx/lotus-miner.git  &&\
     cd lotus-miner &&\
     ./script/install.sh
 
